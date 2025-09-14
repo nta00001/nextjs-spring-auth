@@ -119,12 +119,12 @@ export default function RegisterPage() {
           </button>
         </form>
 
-        <p className="mt-6 text-center text-sm text-gray-600">
-          Đã có tài khoản?{' '}
-          <Link href="/" className="font-semibold text-indigo-600 hover:underline">
-            Đăng nhập
-          </Link>
-        </p>
+       <p className="mt-6 text-center text-sm text-gray-600">
+  Đã có tài khoản?{' '}
+  <Link href="/login" className="font-semibold text-indigo-600 hover:underline">
+    Đăng nhập
+  </Link>
+</p>
 
         {error && <p className="mt-4 text-center text-sm text-red-600">{error}</p>}
       </div>

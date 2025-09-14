@@ -16,6 +16,7 @@ export default function HomePage() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
+        // Lấy 4 sản phẩm đầu tiên làm sản phẩm nổi bật
         const response = await fetch('/api-proxy/products?page=0&size=4');
         const data = await response.json();
         setFeaturedProducts(data.list);
